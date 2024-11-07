@@ -24,10 +24,23 @@ async function main() {
 }
 
 
+//setup basic connection
+
+
+const path=require("path");
+app.set("view engine","ejs");
+app.set("views",path.join(__dirname,"views"));
+const ejsMate=require("ejs-mate");
+app.engine('ejs',ejsMate);
+app.use(express.static(path.join(__dirname,"/public")));
 
 
 
-app.get("/",(req,res)=>{
 
-    res.send("hello how are u");
+
+//router
+
+app.get("/news",(req,res)=>{
+
+    res.send("home page");
 })
