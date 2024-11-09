@@ -55,6 +55,7 @@ app.get("/news/:id",async(req,res)=>{
 let {id}=req.params;
 
 let news=await News.findById(id);
+console.log(news.date);
 
 res.render("./news/show.ejs",{news});
 
