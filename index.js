@@ -56,7 +56,7 @@ let {id}=req.params;
 
 let news=await News.findById(id);
 
-res.render("./news/show.ejs",news);
+res.render("./news/show.ejs",{news});
 
 
 })

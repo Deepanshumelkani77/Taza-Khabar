@@ -1,0 +1,40 @@
+.show{
+
+    width:100%;
+   
+    background-color: white;
+    padding-top: 40px;
+    font-family: "Roboto",serif;
+    padding-bottom: 40px;
+}
+.show .image{
+
+    width:50%;
+    height:60vh;
+    margin: auto;
+   
+
+}
+.show .image img{
+    width:100%;
+    height:60vh;
+    border-radius: 30px;
+
+}
+.content{
+padding-top: 2vw;
+padding-left:2vw ;
+padding-right: 2vw;
+    width:50%;
+   
+    margin: auto;
+    background-color:white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;;
+}
+.content p{
+    font-size: 20px;
+    color: red;
+}
