@@ -4,14 +4,20 @@
 
     <% for(i of news) {%>
 
-        <div class="card">
+        <a class='anchor' href="/news/<%=i.id%>" >
 
-            <div class="image"><img src="<%=i.image %>" alt="image"></div>
-            <div class="tittle">
-                <h3><%= i.tittle %></h3>
-            </div>
-            
-            </div>
+            <div class="card">
+
+                <div class="image"><img src="<%=i.image %>" alt="image"></div>
+                <div class="tittle">
+                    <h3><%= i.tittle %></h3>
+                </div>
+                
+                </div>
+
+        </a>
+
+       
 
     <%}%>
 

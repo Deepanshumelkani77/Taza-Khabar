@@ -38,6 +38,9 @@ app.use(express.static(path.join(__dirname,"/public")));
 
 const News=require("./models/news.js")
 
+
+
+
 //router
 
 app.get("/news",async(req,res)=>{
@@ -45,4 +48,15 @@ app.get("/news",async(req,res)=>{
 let news=await News.find({});
 
 res.render("./news/home.ejs",{news});
+})
+
+app.get("/news/:id",async(req,res)=>{
+
+let {id}=req.params;
+
+let news=await News.findById(id);
+
+res.render("./news/show.ejs",news);
+
+
 })

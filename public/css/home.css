@@ -153,7 +153,7 @@ footer{
     background-color: rgba(0, 0, 0, 0.92);
     text-align: center;
     color: white;
-    padding-top: 20px;
+    padding-top: 40px;
 }
 footer h3{
 
@@ -162,6 +162,24 @@ footer h3{
 }
 footer p{
     color: rgba(255, 255, 255, 0.587);
+}
+.social{
+    margin: 50px auto;
+    width:300px;
+    display: flex;
+    justify-content: space-evenly;
+    color:white;
+    font-size: 25px;
+   
+
+
+}
+.social i{
+    transition: 1s;
+}
+.social i:hover{
+
+    transform: translateY(-20px);
 }
 
 
@@ -188,6 +206,7 @@ footer p{
 }
 
 .card{
+    
     height:500px;
     width:400px;
     border-radius:20px ;
@@ -213,18 +232,24 @@ footer p{
     border-top-right-radius: 20px;
 }
 .card .tittle h3{
-
+    
 margin-top: 30px;
 margin-left: 10px;
 margin-right:10px ;
 font-family: "Roboto",serif;
 line-height: 45px;
 }
+.anchor{
+    text-decoration: none;
+}
 
 
 @media screen and (max-width:426px) and (min-width:0px)
 {
 
+    footer{
+     height:80vh;   
+    }
 .nav .link{
     display: none;
 
@@ -331,6 +356,9 @@ font-size: 20px;
 
 @media screen and (max-width:1024px) and (min-width:901px)
 {
+    footer{
+        height:55vh;
+    }
 
     
     .link{
@@ -356,6 +384,9 @@ font-size: 20px;
 
 @media screen and (max-width:905px) and (min-width:769px)
 {
+    footer{
+        height:65vh;
+    }
     .link{
         gap:3vw;
           }
@@ -396,6 +427,9 @@ font-size: 20px;
 @media screen and (max-width:768px) and (min-width:600px)
 {
 
+    footer{
+        height:60vh;
+    }
     .link{
         gap:2vw;
           }
