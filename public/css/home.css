@@ -45,6 +45,35 @@ font-family: "Roboto",serif;
     color: red;
 }
 
+.sidebar-user{
+    height:20vh;
+    display: flex;
+    justify-content: space-evenly;
+    width:100%;
+    
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.sidebar-user .signup{
+    font-family: "Outfit",sans-serif;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border:2px solid red;
+    background-color: transparent;
+
+}
+.sidebar-user .login{
+    font-family: "Outfit",sans-serif;
+    padding: 4px 15px;
+    border-radius: 20px;
+    border:2px solid red;
+    background-color: transparent;
+}
+.sidebar-user button:hover{
+    background-color: rgba(255, 0, 0, 0.194);
+}
 
 
 
@@ -165,6 +194,7 @@ footer p{
     border:1px solid rgba(0, 0, 0, 0.395);
     box-shadow: 0 0 5px black;
     transition: 0.5s;
+    cursor: pointer;
 
 }
 .card:hover{
@@ -210,7 +240,200 @@ line-height: 45px;
     margin-right: 1vw;
 
 }
+.home{
+    padding-top: 30px;
+    padding-left: 0%;
+    padding-right: 0%;
+    gap:5vw;
+}
+
+.card{
+    height:400px;
+    width:300px;
+  
+}
+
+.card .image{
+    height:250px;
+   }
+.card .image img{
+    width:100%;
+    height:250px;
+}
+.card .tittle h3{
+
+margin-top: 20px;
+
+font-family: "Roboto",serif;
+line-height: 30px;
+font-size: 20px;
+}
 
 
+
+}
+
+
+@media screen and (max-width:1575px) and (min-width:1441px)
+{
+
+    .home{
+    
+        padding-left: 5%;
+        padding-right: 5%;
+       
+        }
+
+}
+
+
+@media screen and (max-width:1440px) and (min-width:1025px)
+{
+
+    
+    .link{
+  gap:3.5vw;
+    }
+
+    .home{
+    
+        padding-left: 7%;
+        padding-right: 7%;
+       
+        
+        
+    
+    }
+    
+    .card{
+        height:400px;
+        width:300px;
+      
+}
+   
+    .card .image{
+        height:250px;
+       }
+    .card .image img{
+        width:100%;
+        height:250px;
+    }
+    .card .tittle h3{
+    
+    margin-top: 20px;
+  
+    font-family: "Roboto",serif;
+    line-height: 30px;
+    font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width:1024px) and (min-width:901px)
+{
+
+    
+    .link{
+  gap:3vw;
+    }
+    .link a{
+        text-decoration: none !important;
+        color: black;
+        font-size: 15px;
+    }
+    .user{
+  font-size: 14px;
+       }
+   
+       .home{
+    
+        padding-left: 5%;
+        padding-right: 5%;
+      
+    
+    }
+}
+
+@media screen and (max-width:905px) and (min-width:769px)
+{
+    .link{
+        gap:3vw;
+          }
+          .link a{
+              text-decoration: none !important;
+              color: black;
+              font-size: 15px;
+          }
+          .user{
+        font-size: 14px;
+             }
+
+             .card{
+                height:400px;
+                width:300px;
+              
+        }
+           
+            .card .image{
+                height:250px;
+               }
+            .card .image img{
+                width:100%;
+                height:250px;
+            }
+            .card .tittle h3{
+            
+            margin-top: 20px;
+          
+            font-family: "Roboto",serif;
+            line-height: 30px;
+            font-size: 20px;
+            }
+
+
+}
+
+@media screen and (max-width:768px) and (min-width:600px)
+{
+
+    .link{
+        gap:2vw;
+          }
+          .link a{
+              text-decoration: none !important;
+              color: black;
+              font-size: 13px;
+          }
+          .user{
+        font-size: 12px;
+             }
+
+
+             .home{
+                padding-left:0% ;
+                padding-right: 0%;
+             }
+
+             .card{
+                height:350px;
+                width:250px;
+              
+        }
+           
+            .card .image{
+                height:200px;
+               }
+            .card .image img{
+                width:100%;
+                height:200px;
+            }
+            .card .tittle h3{
+            
+            margin-top: 20px;
+          
+            font-family: "Roboto",serif;
+            line-height: 30px;
+            font-size: 18px;
+            }
 
 }
