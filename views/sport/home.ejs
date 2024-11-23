@@ -1,0 +1,28 @@
+<%layout("/layouts/boilerplate") %>
+
+
+
+<div class="home">
+
+    <% for(i of sport) {%>
+
+        <a class='anchor' href="/sport/<%=i.id%>" >
+
+            <div class="card">
+
+                <div class="image"><img src="<%=i.image %>" alt="image"></div>
+                <div class="tittle">
+                    <h3><%= i.tittle %></h3>
+                </div>
+                
+                </div>
+
+        </a>
+
+       
+
+    <%}%>
+
+
+
+</div>

@@ -40,3 +40,97 @@ padding-top: 2vw;
 .content .date{
     color:rgba(0, 0, 0, 0.669);
 }
+
+
+@media screen and (max-width:1200px) and (min-width:1025px)
+{
+
+    .content p{
+        font-size: 16px;
+        color: red;
+    }
+   .content h3{
+    font-size: 23px;
+   }
+
+}
+@media screen and (max-width:1024px) and (min-width:901px)
+{
+
+    .content p{
+        font-size: 15px;
+     
+    }
+   .content h3{
+    font-size: 22px;
+   }
+}
+
+@media screen and (max-width:900px) and (min-width:769px)
+{
+
+    .show .image{
+
+        width:60%;
+     }
+    .show .image img{
+        width:100%;
+    }
+    .content{
+        width:60%;
+    }
+    .content p{
+        font-size: 14px;
+     
+    }
+   .content h3{
+    font-size: 20px;
+   }
+
+}
+
+@media screen and (max-width:768px) and (min-width:600px)
+{
+    .show .image{
+
+        width:65%;
+     }
+    .show .image img{
+        width:100%;
+    }
+    .content{
+        width:65%;
+    }
+    .content p{
+        font-size: 14px;
+     
+    }
+   .content h3{
+    font-size: 20px;
+   }
+
+
+}
+
+@media screen and (max-width:426px) and (min-width:0px)
+{
+
+    .show .image{
+
+        width:90%;
+     }
+    .show .image img{
+        width:100%;
+    }
+    .content{
+        width:90%;
+    }
+    .content p{
+        font-size: 12px;
+     
+    }
+   .content h3{
+    font-size: 18px;
+   }
+
+}

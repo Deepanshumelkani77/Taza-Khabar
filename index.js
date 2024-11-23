@@ -37,7 +37,7 @@ app.use(express.static(path.join(__dirname,"/public")));
 
 
 const News=require("./models/news.js")
-
+const Sport=require("./models/sport.js")
 
 
 
@@ -55,9 +55,33 @@ app.get("/news/:id",async(req,res)=>{
 let {id}=req.params;
 
 let news=await News.findById(id);
-console.log(news.date);
+
 
 res.render("./news/show.ejs",{news});
 
 
 })
+
+
+
+//sports page
+
+app.get("/sport",async(req,res)=>{
+
+  let sport=await Sport.find({});
+
+res.render("./sport/home.ejs",{sport})
+
+})
+
+app.get("/sport/:id",async(req,res)=>{
+
+  let {id}=req.params;
+  
+  let sport=await Sport.findById(id);
+  
+  
+  res.render("./sport/show.ejs",{sport});
+  
+  
+  })

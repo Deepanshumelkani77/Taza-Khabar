@@ -11,7 +11,7 @@ async function main() {
 }
 
 
-const News=require("./models/news.js");
+const News=require("../models/news.js");
 
 News.insertMany( [
   {
