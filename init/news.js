@@ -16,13 +16,13 @@ const News=require("../models/news.js");
 News.insertMany( [
   {
     tittle: 'Breaking News: Local School Wins Championship!',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuGpXGmY01Nt1wWSIAKMpLF47zU2hkeYp1Wg&s',
+    image: 'https://www.oregonlive.com/resizer/v2/NP26VZVY4ZFXLNESMJQZAGMFRQ.jpg?auth=489f4f0a2ffc5f3aa77e1394d4d3b3c8633b57e007a17a61e591ab2c83b29e09&width=1280&quality=90',
     content: 'The local high school team has won the regional championship in a thrilling overtime victory...',
     date: new Date('2024-11-05T09:00:00Z')
   },
   {
     tittle: 'Technology Advances: New AI Innovations',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCyzPaTO4vLNxYz-jLmAI4iEQ7E5m9u3NQCQ&s',
+    image: 'https://appsgeyser.com/blog/wp-content/uploads/2023/10/AI.jpg',
     content: 'In a groundbreaking development, AI technology has reached new heights with several innovative breakthroughs...',
     date: new Date('2024-11-04T14:30:00Z')
   },
@@ -48,61 +48,61 @@ News.insertMany( [
   // New Dummy Data
   {
     tittle: 'Politics: New Election Law Changes in 2025',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnfzc2YNkotvdqii_6bADzcEYlTTFvg9R_Ya-m8Eaz0kKUG479dYsdHeXfYa3aVgfbMhY&usqp=CAU',
+    image: 'https://img.etimg.com/thumb/height-450,width-600,resizemode-4,imgsize-84648,msid-114926203/us-election-2024-highlights-kamala-harris-donald-trump-make-final-all-out-campaign-push-ahead-of-election-day.jpg',
     content: 'The government has announced new changes to the election law for 2025, which will impact how votes are cast and counted...',
     date: new Date('2024-10-30T12:00:00Z')
   },
   {
     tittle: 'Economy: Global Stocks Surge to Record Highs',
-    image: 'https://ddnews.gov.in/wp-content/uploads/2024/06/GettyImages-1213017594-1-1200x800.jpg',
+    image: 'https://www.investopedia.com/thmb/J2o3SOKhRnp2ROlUd3cT2RSrRNw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-18219207341-8454c86dba7b461e8e49635500728896.jpg',
     content: 'Stock markets around the world have reached new record highs, driven by strong corporate earnings and investor optimism...',
     date: new Date('2024-10-29T09:30:00Z')
   },
   {
     tittle: 'Health: Mental Health Awareness Month Kicks Off',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVwoHZsKN4LWjgPnRX7loowzRDMMB6jTiliQ&s',
+    image: 'https://media.istockphoto.com/id/1480823608/vector/mental-health-awareness-month-vector-illustration-with-green-ribbon-and-flowers-human.jpg?s=612x612&w=0&k=20&c=rWc5-XEPGWfa95lK4Xfbalfjew3TXRJ-oVBcgrpJCUo=',
     content: 'This month is dedicated to raising awareness about mental health issues. Experts encourage open discussions and proper care...',
     date: new Date('2024-10-28T14:00:00Z')
   },
   {
     tittle: 'Entertainment: Major Movie Release Coming This Friday',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSorRnFlR2I6QfrUvUVunfGIhvBU7Qgoo17eA&s',
+    image: 'https://static.toiimg.com/photo/msid-91973367/91973367.jpg',
     content: 'A new blockbuster movie is set to hit theaters this Friday. Fans are excited for the premiere of "The Last Journey" starring top actors...',
     date: new Date('2024-10-27T11:45:00Z')
   },
   {
     tittle: 'Technology: SpaceX Successfully Launches Mars Probe',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiiuVlEU8SDrDmwXEDvInCyU57IMqXaA8GaA&s',
+    image: 'https://ca-times.brightspotcdn.com/dims4/default/02274fc/2147483647/strip/true/crop/6260x3848+0+0/resize/1200x738!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F22%2F1a%2F26c12dfa4422a849439546277d3b%2Fspacex-starship-67974.jpg',
     content: 'SpaceX has successfully launched its Mars probe, aiming to collect data about the Martian atmosphere and potential for life...',
     date: new Date('2024-10-26T15:30:00Z')
   },
   {
     tittle: 'Science: New Fossils Discovered in the Amazon',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2gjpO3BxMtEHRBXWs5TObitENaaqKDLF6_A&s',
+    image: 'https://images.nationalgeographic.org/image/upload/v1638890342/EducationHub/photos/protoceratops.jpg',
     content: 'A team of scientists has discovered new fossils deep in the Amazon rainforest, shedding light on the prehistoric creatures that once roamed the region...',
     date: new Date('2024-10-25T08:30:00Z')
   },
   {
     tittle: 'Sports: Tennis Star Wins Grand Slam Tournament',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_dXul0rEcRqM9EcuodUk-2do_RF-tqpab9g&s',
+    image: 'https://media.nbclosangeles.com/2024/06/GettyImages-2155945299.jpg?quality=85&strip=all',
     content: 'Tennis star Maria Smith has claimed her third Grand Slam title after a stunning victory in the final match against her rival...',
     date: new Date('2024-10-24T17:00:00Z')
   },
   {
     tittle: 'Business: Tech Giant Acquires Startup for $5 Billion',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQENF0cTQF5jJP1i4GBWP5g4uVb3OKw3RM4ZiPBFDjVkXRXnhfHXZY4PnrLNQFv0fLQgxs&usqp=CAU',
+    image: 'https://platform.vox.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/24390971/524412020.jpg?quality=90&strip=all&crop=16.666666666667,0,66.666666666667,100',
     content: 'In a surprising move, a major tech company has acquired a small AI startup for $5 billion, a sign of growing investment in artificial intelligence...',
     date: new Date('2024-10-23T13:00:00Z')
   },
   {
     tittle: 'Travel: New Airline Routes Open Between Asia and Europe',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZXj9X4y9pZruCxRYBB4ZFtIOmriFWFgdJUQ&s',
+    image: 'https://static1.simpleflyingimages.com/wordpress/wp-content/uploads/2024/07/shutterstock_1722481489-1.jpg',
     content: 'Several new international flights are now available between Asia and Europe, making it easier than ever to travel between the two continents...',
     date: new Date('2024-10-22T10:30:00Z')
   },
   {
     tittle: 'Culture: Annual Art Festival Kicks Off in Paris',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1yaxH0EBzp1OLLJq5y7lf8wiuCBiMfMxSbA&s',
+    image: 'https://www.parisdiscoveryguide.com/image-files/800-fnac-concert-olivier-ortelpa.jpg',
     content: 'The prestigious annual art festival in Paris has begun, featuring exhibitions from over 200 artists from around the world...',
     date: new Date('2024-10-21T16:00:00Z')
   },
@@ -114,7 +114,7 @@ News.insertMany( [
   },
   {
     tittle: 'Weather: Record Heatwave in the Southern States',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYijTUFaAjJApfV9n7cIf-rVkEjb9AnM9E1fIbVCcJzIUcNYjzgBaoy0CdKPQ7KnfLkz0&usqp=CAU',
+    image: 'https://cdn.zeebiz.com/sites/default/files/2024/06/20/300542-high-temp.jpg?im=FitAndFill=(1200,900)',
     content: 'The Southern United States is experiencing an unprecedented heatwave with temperatures exceeding 110°F in some areas...',
     date: new Date('2024-10-19T12:15:00Z')
   },
@@ -126,7 +126,7 @@ News.insertMany( [
   },
   {
     tittle: 'Music: New Album by Indie Band Hits Number One',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk2AJS0yHrszlEtEAuEgySeEuNOKz8o-8BeecbTv5uSXOV5CN-3ZK9FIRKNlV7LE_uLFE&usqp=CAU',
+    image: 'https://a10.gaanacdn.com/gn_img/albums/VdNW0JMKo5/NW0l6NgEWo/size_m.jpg',
     content: 'The latest album by indie band "The Echoes" has hit number one on the charts, with fans praising its innovative sound and emotional depth...',
     date: new Date('2024-10-17T10:45:00Z')
   }

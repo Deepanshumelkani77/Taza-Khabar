@@ -40,6 +40,7 @@ const News=require("./models/news.js")
 const Sport=require("./models/sport.js")
 const Market=require("./models/market.js")
 const Goverment=require("./models/goverment.js")
+const World=require("./models/world.js")
 
 
 
@@ -134,3 +135,25 @@ app.get("/sport/:id",async(req,res)=>{
       
       
       })
+
+      //world page
+
+      app.get("/world",async(req,res)=>{
+
+        let world=await World.find({});
+      
+      res.render("./world/home.ejs",{world})
+      
+      })
+
+      app.get("/world/:id",async(req,res)=>{
+
+        let {id}=req.params;
+        
+        let world=await World.findById(id);
+        
+        
+        res.render("./world/show.ejs",{world});
+        
+        
+        })
