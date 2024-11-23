@@ -1,7 +1,7 @@
 const mongoose=require("mongoose");
 const {Schema}=mongoose;
 
-const marketSchema= new mongoose.Schema(
+const govermentSchema= new mongoose.Schema(
     {
         tittle:String,
         image:String,
@@ -11,7 +11,7 @@ const marketSchema= new mongoose.Schema(
         date:Date
 
     }
-);
+)
 
-const Market=mongoose.model("Market",marketSchema);
-module.exports=Market;
+const Goverment=mongoose.model("Goverment",govermentSchema);
+module.exports=Goverment;

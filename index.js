@@ -38,11 +38,15 @@ app.use(express.static(path.join(__dirname,"/public")));
 
 const News=require("./models/news.js")
 const Sport=require("./models/sport.js")
+const Market=require("./models/market.js")
+const Goverment=require("./models/goverment.js")
 
 
 
 //router
 
+
+//news
 app.get("/news",async(req,res)=>{
 
 let news=await News.find({});
@@ -85,3 +89,48 @@ app.get("/sport/:id",async(req,res)=>{
   
   
   })
+
+
+  //market page
+
+  app.get("/market",async(req,res)=>{
+
+    let market=await Market.find({});
+  
+  res.render("./market/home.ejs",{market})
+  
+  })
+  
+  app.get("/market/:id",async(req,res)=>{
+
+    let {id}=req.params;
+    
+    let market=await Market.findById(id);
+    
+    
+    res.render("./market/show.ejs",{market});
+    
+    
+    })
+
+    //goverment page
+
+    app.get("/goverment",async(req,res)=>{
+
+      let goverment=await Goverment.find({});
+    
+    res.render("./goverment/home.ejs",{goverment})
+    
+    })
+
+    app.get("/goverment/:id",async(req,res)=>{
+
+      let {id}=req.params;
+      
+      let goverment=await Goverment.findById(id);
+      
+      
+      res.render("./goverment/show.ejs",{goverment});
+      
+      
+      })
