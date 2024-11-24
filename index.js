@@ -41,7 +41,7 @@ const Sport=require("./models/sport.js")
 const Market=require("./models/market.js")
 const Goverment=require("./models/goverment.js")
 const World=require("./models/world.js")
-
+const Video =require("./models/video.js")
 
 
 //router
@@ -156,4 +156,12 @@ app.get("/sport/:id",async(req,res)=>{
         res.render("./world/show.ejs",{world});
         
         
+        })
+
+        //video page
+
+        app.get("/video",async(req,res)=>{
+          let video=await Video.find({})
+          res.render("./video/index.ejs",{video})
+
         })
