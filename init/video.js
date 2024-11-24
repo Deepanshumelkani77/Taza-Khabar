@@ -12,11 +12,18 @@ async function main() {
 
 const Video=require("../models/video.js");
 
-
 Video.insertMany([
     {
-        tittle:"What Happens to KL Rahul when Rohit Returns?",
-        video:"https://youtu.be/VhvF5Gaggqw",
-        date:"new Date('2024-11-17T09:30:00Z')"
+tittle:"10 second  10 second Biggest Win For A Pre-Poll Alliance In Last 50 Years: PM Modi On Maharashtra",
+video:"https://www.ndtv.com/video/biggest-win-for-a-pre-poll-alliance-in-last-50-years-pm-modi-on-maharashtra-864628",
+date:new Date('2024-11-17T09:30:00Z')
     }
-])
+    ,
+    {
+tittle:'After Mahayuti Keeps Maharashtra, Next Challenge In Selecting Chief Minister',
+video:"https://www.ndtv.com/video/after-mahayuti-keeps-maharashtra-next-challenge-in-selecting-chief-minister-864553",
+date:  new Date('2024-11-16T13:00:00Z')
+    }
+
+
+]);

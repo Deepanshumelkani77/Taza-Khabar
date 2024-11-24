@@ -5,6 +5,7 @@ const videoSchema= new mongoose.Schema(
     {
         tittle:String,
         video:String,
+       
         date:Date
 
     }

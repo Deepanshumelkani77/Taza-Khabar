@@ -2,15 +2,15 @@
 
 
 
-<div class="home\">
+<div class="index">
 
     <% for(i of video) {%>
 
-        <a class='anchor' href="/sport/<%=i.id%>" >
+        <a class='anchor' href="" >
 
-            <div class="card">
+            <div class="video-card">
 
-                <div class="image"><img src="<%=i.video %>" alt="image"></div>
+                <div class="video"><video src="<%=i.video %>" controls autoplay loop muted></video></div>
                 <div class="tittle">
                     <h3><%= i.tittle %></h3>
                 </div>

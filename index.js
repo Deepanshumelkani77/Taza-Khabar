@@ -162,6 +162,7 @@ app.get("/sport/:id",async(req,res)=>{
 
         app.get("/video",async(req,res)=>{
           let video=await Video.find({})
+          console.log(video)
           res.render("./video/index.ejs",{video})
 
         })
