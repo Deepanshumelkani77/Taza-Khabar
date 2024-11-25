@@ -10,7 +10,11 @@
 
             <div class="video-card">
 
-                <div class="video"><video src="<%=i.video %>" controls ></video></div>
+                <div class="video"><video controls>
+                    <source src=<%= i.video%> type="video/mp4">
+                    
+                
+                  </video></div>
                 <div class="tittle">
                     <h3><%= i.tittle %></h3>
                 </div>
