@@ -34,6 +34,10 @@ const ejsMate=require("ejs-mate");
 app.engine('ejs',ejsMate);
 app.use(express.static(path.join(__dirname,"/public")));
 
+if(process.env.NODE_ENV!="production") //jab hamara project production phase m nahi h tab .env ko use krna h .....
+{
+  require('dotenv').config();
+}
 
 
 const News=require("./models/news.js")
