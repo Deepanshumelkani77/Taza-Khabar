@@ -5,14 +5,14 @@ const News=require("../models/news.js");
 
 
     //news
-router.get("/news",async(req,res)=>{
+router.get("/",async(req,res)=>{
 
     let news=await News.find({});
-    
     res.render("./news/home.ejs",{news});
+
     })
     
-    router.get("/news/:id",async(req,res)=>{
+    router.get("/:id",async(req,res)=>{
     
     let {id}=req.params;
     

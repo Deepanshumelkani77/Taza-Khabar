@@ -34,7 +34,7 @@ app.set("views",path.join(__dirname,"views"));
 const ejsMate=require("ejs-mate");
 app.engine('ejs',ejsMate);
 app.use(express.static(path.join(__dirname,"/public")));
-const router=express.Router();
+
 
 
 //setup Schema
@@ -54,6 +54,17 @@ const Video =require("./models/video.js")
 const news=require("./routes/news.js");
 app.use("/news",news);
 
+const sport=require("./routes/sport.js");
+app.use("/sport",sport);
+
+const market =require("./routes/market.js");
+app.use("/market",market);
+
+const goverment=require("./routes/goverment.js");
+app.use("/goverment",goverment);
+
+const world=require("./routes/world.js");
+app.use("/world",world);
 
 
 
