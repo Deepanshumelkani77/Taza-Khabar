@@ -34,7 +34,7 @@ app.set("views",path.join(__dirname,"views"));
 const ejsMate=require("ejs-mate");
 app.engine('ejs',ejsMate);
 app.use(express.static(path.join(__dirname,"/public")));
-
+app.use(express.urlencoded({extended:true}));
 
 
 //setup Schema

@@ -12,6 +12,16 @@ router.get("/",async(req,res)=>{
 
     })
 
+    router.post("/",async(req,res)=>{
+      let{tittle,image,content}=req.body;
+      let date=new Date();
+const news=new News({tittle:tittle,image:image,content:content,date:date});
+await news.save();
+res.redirect("/news");
+      
+
+    })
+
 
     router.get("/new",(req,res)=>{
 
@@ -33,5 +43,7 @@ router.get("/",async(req,res)=>{
     })
 
     
+    
+ 
 
     module.exports=router;

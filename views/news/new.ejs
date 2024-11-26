@@ -2,32 +2,30 @@
 
 <div class="form">
 
-    <form action="">
+    <form action="/news" method="post">
+
+        <div class="form-content">
 
         <div>
-
-                  
+            <label for="tittle" class="form-label">Tittle</label>
+            <input class='form-control' type="text" id="tittle" name="tittle" placeholder="enter tittle">
         </div>
-
         <div>
-            <label for="tittle">Tittle</label>
-            <input class="form-control" type="text" id="tittle" name="tittle" placeholder="enter tittle">
+            <label for="image" class="form-label">Image</label>
+            <input class='form-control' class='image' type="text" id="image" name="image" placeholder="enter image">
         </div>
+        <div>
+            <label for="content" class="form-label">Content</label>
+            <textarea class='form-control' type="text" id="content" name="content" placeholder="enter tittle"></textarea>
+        </div>
+
+        <div></div>
         
-        <div>
-            <label for="image">Image</label>
-            <input class="form-control" type="text" id="image" name="image" placeholder="enter image link">
-        </div>
-
-        <div>
-            <label for="content">Content</label>
-            <textarea class="form-control" type="text" id="content" name="content" placeholder="enter content"></textarea>
-        </div>
-        
+        <button>Submit</button>
 
         </div>
 
-      
         </form>
 
-</div>
+    </div>
+

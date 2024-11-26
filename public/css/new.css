@@ -11,8 +11,16 @@
      
      
 }
-.form form div{
+.form  .form-content{
     display: flex !important;
     flex-direction: column;
     justify-content: space-evenly;
+    height:60vh;
+}
+
+.form form input{
+    height:60px;
+}
+.form form textarea{
+    height:90px;
 }
