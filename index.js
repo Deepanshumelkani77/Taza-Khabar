@@ -1,4 +1,5 @@
 
+//setup express
 const express = require('express');
 const app = express();
 const port=7007;
@@ -9,7 +10,7 @@ app.listen(port,()=>{
 
 
 
-
+//setup mongodb
 
 const mongoose = require('mongoose');
 
@@ -33,9 +34,10 @@ app.set("views",path.join(__dirname,"views"));
 const ejsMate=require("ejs-mate");
 app.engine('ejs',ejsMate);
 app.use(express.static(path.join(__dirname,"/public")));
+const router=express.Router();
 
 
-
+//setup Schema
 
 const News=require("./models/news.js")
 const Sport=require("./models/sport.js")
@@ -49,26 +51,9 @@ const Video =require("./models/video.js")
 
 //router
 
+const news=require("./routes/news.js");
+app.use("/news",news);
 
-//news
-app.get("/news",async(req,res)=>{
-
-let news=await News.find({});
-
-res.render("./news/home.ejs",{news});
-})
-
-app.get("/news/:id",async(req,res)=>{
-
-let {id}=req.params;
-
-let news=await News.findById(id);
-
-
-res.render("./news/show.ejs",{news});
-
-
-})
 
 
 
