@@ -1,11 +1,11 @@
 const express=require("express");
 const router=express.Router();
-const News=require("../models/news.js");
+const Market=require("../models/market.js");
 
 
   //market page
 
-  router.get("/market",async(req,res)=>{
+  router.get("/",async(req,res)=>{
 
     let market=await Market.find({});
   
@@ -13,7 +13,7 @@ const News=require("../models/news.js");
   
   })
   
-  router.get("/market/:id",async(req,res)=>{
+  router.get("/:id",async(req,res)=>{
 
     let {id}=req.params;
     

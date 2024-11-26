@@ -1,9 +1,9 @@
 const express=require("express");
 const router=express.Router();
-const News=require("../models/news.js");
+const World=require("../models/world.js");
 
 
-router.get("/world",async(req,res)=>{
+router.get("/",async(req,res)=>{
 
     let world=await World.find({});
   
@@ -11,7 +11,7 @@ router.get("/world",async(req,res)=>{
   
   })
 
-  router.get("/world/:id",async(req,res)=>{
+  router.get("/:id",async(req,res)=>{
 
     let {id}=req.params;
     

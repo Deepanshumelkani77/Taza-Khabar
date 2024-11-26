@@ -1,6 +1,6 @@
 const express=require("express");
 const router=express.Router();
-const News=require("../models/news.js");
+const Sport=require("../models/sport.js");
 
 router.get("/",async(req,res)=>{
 
