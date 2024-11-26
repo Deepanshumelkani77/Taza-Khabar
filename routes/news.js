@@ -11,6 +11,14 @@ router.get("/",async(req,res)=>{
     res.render("./news/home.ejs",{news});
 
     })
+
+
+    router.get("/new",(req,res)=>{
+
+        res.send("./news/new.ejs");
+      })
+
+
     
     router.get("/:id",async(req,res)=>{
     
@@ -23,5 +31,7 @@ router.get("/",async(req,res)=>{
     
     
     })
+
+    
 
     module.exports=router;
