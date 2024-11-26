@@ -1,0 +1,18 @@
+
+.form{
+   
+     width:60%;
+     margin: auto;
+     background-color: bisque;
+     height:60vh;
+     margin-bottom: 10vh;
+     margin-top:10vh ;
+     padding:0  10%;
+     
+     
+}
+.form form div{
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
