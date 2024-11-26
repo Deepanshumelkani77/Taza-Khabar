@@ -15,7 +15,7 @@ router.get("/",async(req,res)=>{
 
     router.get("/new",(req,res)=>{
 
-        res.send("./news/new.ejs");
+        res.render("./news/new.ejs");
       })
 
 
