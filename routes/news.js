@@ -12,7 +12,7 @@ router.get("/",async(req,res)=>{
 
     })
 
-    router.post("/",async(req,res)=>{
+    router.post("/new",async(req,res)=>{
       let{tittle,image,content}=req.body;
       let date=new Date();
 const news=new News({tittle:tittle,image:image,content:content,date:date});
